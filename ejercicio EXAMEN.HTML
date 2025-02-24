@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function follaperros() {
+            const VALOR_IMPAR = 1
+            const MINIMO_IMPAR = 1
+            const MINIMO_PAR = 0
+            const VALOR_PAR = 2
+            const MSG = "PON UN NUMERO"
+
+            let numero = prompt(MSG)
+            document.write("El usuario a introducido: "+numero +"<br>")
+            if (numero % 2 == 0) {
+                document.write("se muestra por pantalla: ")
+                while (numero > MINIMO_PAR) {
+                    document.write(numero + " ")
+                    numero -= VALOR_PAR
+                }
+            } else {
+                document.write("se muestra por pantalla: ")
+                while (numero >= MINIMO_IMPAR) {
+                    document.write(numero +" ")
+                    numero-=VALOR_IMPAR
+                }
+
+            }
+        }
+follaperros()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+let numero = 0
+const MSG_PREGUNTA = "POR UN NUMERO"
+
+const MSG_ACERTADO = "LO HAS ACERTADO"
+
+const MSG_MAYOR = "EL NUMERO BUSCADO ES MAYOR"
+
+const MSG_MENOR = "EL NUMERO BUSCADO ES MENOR"
+
+const NUMERO_BUSCADO = 5
+
+numero = prompt(MSG_PREGUNTA)
+
+if (numero == NUMERO_BUSCADO){document.write(MSG_ACERTADO)}
+else if (numero > NUMERO_BUSCADO){document.write(MSG_MAYOR)}
+else {document.write(MSG_MENOR)}
+  </script>
+</body>
+</html>
